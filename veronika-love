@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Веронике от безумного Бро</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', cursive;
+      background-color: #0f0f0f;
+      color: #ff69b4;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 60px;
+      font-size: 3em;
+      animation: glitch 1s infinite;
+    }
+    p {
+      font-size: 1.3em;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+    .skull {
+      font-size: 5em;
+      margin: 20px 0;
+      animation: spin 4s linear infinite;
+    }
+    button {
+      background-color: #ff69b4;
+      border: none;
+      color: black;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 30px;
+    }
+    button:hover {
+      background-color: #ff1493;
+    }
+    .hidden {
+      display: none;
+      font-size: 1.5em;
+      margin-top: 30px;
+    }
+
+    @keyframes glitch {
+      0% { text-shadow: 2px 2px #ff00ff; }
+      50% { text-shadow: -2px -2px #00ffff; }
+      100% { text-shadow: 2px 2px #ff00ff; }
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Привет, Вероника 💀</h1>
+  <div class="skull">☠️</div>
+  <p>Ты как вирус... но тот, который не хочется лечить 😈</p>
+  <p>Ты свела меня с ума сильнее, чем TikTok в 3 часа ночи</p>
+  <p>Ты моя любимая обезьянка, даже если бы я был зомби — не тронул бы твои мозги 🍌🧠</p>
+
+  <button onclick="showLove()">Нажми, если не боишься 👻</button>
+
+  <div id="love" class="hidden">
+    <p><strong>Я люблю тебя, Вероника.</strong><br>Серьёзно. Без приколов. Даже если ты снова съешь моё мороженое 🍦</p>
+  </div>
+
+  <script>
+    function showLove() {
+      document.getElementById("love").classList.remove("hidden");
+    }
+  </script>
+
+</body>
+</html>
